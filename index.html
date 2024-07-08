@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    input[type="text"] {
+        width: 70%;
+        padding: 8px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    button {
+        padding: 8px 15px;
+        background-color: #4ca5af;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #458ca0;
+    }
+    .purchased {
+        text-decoration: line-through;
+        color: #999;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Shopping List</h2>
+    <form id="shopping-form">
+        <input type="text" id="item" placeholder="Enter item...">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="item-list">
+    </ul>
+    <div>
+        <button id="mark-purchased-btn">Mark Purchased</button>
+        <button id="clear-list-btn">Clear List</button>
+    </div>
+</div>
+
+<script src="shopping-list.js"></script>
+
+</body>
+</html>
